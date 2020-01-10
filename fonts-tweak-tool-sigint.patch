@@ -1,0 +1,32 @@
+From f3a1f55c594a06503c27c8a7e9f6c11308bf1053 Mon Sep 17 00:00:00 2001
+From: Akira TAGOH <akira@tagoh.org>
+Date: Thu, 12 Dec 2013 20:20:28 +0900
+Subject: [PATCH] Workaround to terminate with SIGINT
+
+---
+ fonts-tweak-tool | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/fonts-tweak-tool b/fonts-tweak-tool
+index 6e8c5e3..60ede69 100755
+--- a/fonts-tweak-tool
++++ b/fonts-tweak-tool
+@@ -24,6 +24,7 @@ import gettext
+ import gi
+ import locale
+ import os
++import signal
+ from fontstweak.fontstweak import FontsTweakConst
+ from fontstweak.util import FontsTweakUtil
+ from fontstweak.aliasui import FontsTweakAliasUI
+@@ -45,6 +46,7 @@ except Locale.Error as e:
+     os.environ['LC_ALL'] = 'C'
+     locale.setlocale(locale.LC_ALL, '')
+ 
++signal.signal(signal.SIGINT, signal.SIG_DFL)
+ gettext.bind_textdomain_codeset(FontsTweakConst.GETTEXT_PACKAGE, locale.nl_langinfo(locale.CODESET))
+ gettext.bindtextdomain(FontsTweakConst.GETTEXT_PACKAGE, FontsTweakConst.LOCALEDIR)
+ gettext.textdomain(FontsTweakConst.GETTEXT_PACKAGE)
+-- 
+1.8.4.2
+

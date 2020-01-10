@@ -1,12 +1,14 @@
 Name: fonts-tweak-tool
 Version: 0.3.2
-Release: 1%{?dist}
+Release: 5%{?dist}
 Summary: Tool for customizing fonts per language
 
 Group: User Interface/Desktops
 License: LGPLv3+
 URL: https://bitbucket.org/tagoh/%{name}/
 Source0: https://bitbucket.org/tagoh/%{name}/downloads/%{name}-%{version}.tar.bz2
+Patch0: %{name}-sigint.patch
+Patch1: %{name}-sitearchdir.patch
 
 BuildRequires: desktop-file-utils
 BuildRequires: intltool
@@ -23,6 +25,10 @@ using fontconfig.
 
 %prep
 %setup -q
+%patch0 -p1 -b .0-sigint
+%patch1 -p1 -b .0-sitearch
+
+autoreconf -f -i
 %configure --disable-static
 
 %build
@@ -43,13 +49,25 @@ rm -f $RPM_BUILD_ROOT%{_datadir}/gir-*/FontsTweak-*.gir
 %files -f %{name}.lang
 %doc README COPYING AUTHORS NEWS
 %{_bindir}/%{name}
-%{python_sitelib}/fontstweak
+%{python_sitearch}/fontstweak
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_libdir}/libfontstweak-resources.so.0*
 %{_libdir}/girepository-*/FontsTweak-*.typelib
 
 %changelog
+* Fri Feb  7 2014 Akira TAGOH <tagoh@redhat.com> - 0.3.2-5
+- Fix the installation path for python scripts (#1061035)
+
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.3.2-4
+- Mass rebuild 2014-01-24
+
+* Fri Jan 10 2014 Akira TAGOH <tagoh@redhat.com> - 0.3.2-3
+- Fix SIGINT handling workaround. (#1040256)
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.3.2-2
+- Mass rebuild 2013-12-27
+
 * Wed Jul 31 2013 Akira TAGOH <tagoh@redhat.com> - 0.3.2-1
 - New upstream release.
 
