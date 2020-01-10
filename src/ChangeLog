@@ -1,0 +1,2252 @@
+commit 6f6c7cd59809c2271f0ce31efee8ed1679cbbdb3
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Jul 31 12:50:40 2013 +0900
+
+    Bump the version to 0.3.2
+
+ NEWS         | 5 +++++
+ configure.ac | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+commit 5a75c24d72c6c55fff9916d9edbb0507ca754a23
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Jul 23 16:59:52 2013 +0900
+
+    Improve code to support python3
+
+ fonts-tweak-tool        |  6 +++---
+ fontstweak/aliasui.py   | 53
+ ++++++++++++++++++++++++++++++++-----------------
+ fontstweak/chooserui.py |  7 +++++--
+ fontstweak/langui.py    | 14 +++++++++----
+ fontstweak/propui.py    | 18 +++++++++++------
+ fontstweak/substui.py   | 24 +++++++++++++---------
+ fontstweak/util.py      | 17 ++++++++++++----
+ 7 files changed, 93 insertions(+), 46 deletions(-)
+
+commit 2dc3bdec6d540e39acfa4b6989bbf6aa3264ddf0
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Jul 23 12:23:19 2013 +0900
+
+    Fix shebang
+
+ fonts-tweak-tool | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit eacd2f9472ddd929cdcefada488deb6c3d748d0d
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon May 13 15:56:08 2013 +0900
+
+    Use AM_CPPFLAGS instead of INCLUDES
+
+ fontstweak/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f267357fe51072cfe2e49c09728398e61435778f
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Apr 17 18:56:26 2013 +0900
+
+    Bump the version to 0.3.1
+
+ NEWS         | 5 +++++
+ configure.ac | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+commit 688b3fe4388554c5d7e5057a498fc86d21a81d49
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Apr 17 18:56:04 2013 +0900
+
+    Update po
+
+ po/af.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/am.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ar.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/as.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ast.po               | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/az.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/bg.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/bn.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/bn_IN.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/brx.po               | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/bs.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ca.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/cs.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/cy.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/da.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/de.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/de_CH.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/el.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/en_GB.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/eo.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/es.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/es_MX.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/et.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/eu_ES.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/fa.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/fi.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/fonts-tweak-tool.pot | 58
+ +++++++++++++++++++++++++----------------------
+ po/fr.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ga.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/gl.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/gu.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/he.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/hi.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/hr.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/hu.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/id.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/is.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/it.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ja.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ka.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/kn.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ko.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ky.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/la.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/lt.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/lv.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/mai.po               | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ml.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/mn.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/mr.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ms.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/nb.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/nds.po               | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/nl.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/nn.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/or.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/pa.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/pl.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/pt.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/pt_BR.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ro.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ru.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/si.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/sk.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/sl.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/sq.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/sr.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/sr@latin.po          | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/sv.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/ta.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/te.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/th.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/tl.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/tr.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/uk.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/vi.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/xh.po                | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/zh_CN.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ po/zh_TW.po             | 60
+ ++++++++++++++++++++++++++-----------------------
+ 79 files changed, 2527 insertions(+), 2211 deletions(-)
+
+commit 51afa079ec7958aa1555213b60f37b461dbf449f
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Apr 17 18:44:27 2013 +0900
+
+    Fix typos
+
+ fonts-tweak-tool      |  3 ++-
+ fontstweak/aliasui.py |  7 ++++---
+ fontstweak/propui.py  |  5 +++--
+ fontstweak/substui.py | 11 ++++++-----
+ 4 files changed, 15 insertions(+), 11 deletions(-)
+
+commit 4e4f723b30039088407d38a02c6fa28fe9f31b06
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Mar 29 20:26:52 2013 +0900
+
+    Fix a build issue with the latest gobject-introspection
+
+ fontstweak/Makefile.am | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit f3075fdbfb50e0bd5ae5a5661bff3815d8b6cfb4
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Mar 29 18:05:02 2013 +0900
+
+    Bump the version to 0.3.0
+
+ NEWS         | 5 +++++
+ configure.ac | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+commit 3d9cf699286d4ea9cc4b5ee1f6f7b4bfe36892b7
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Mar 15 14:04:54 2013 +0900
+
+    Fix an action of 'close' from window manager
+
+    Allow close button only to "close" this dialog if window manager
+    supports it.
+    otherwise call Gtk.main_quit() when delete-event is being raised.
+
+ fonts-tweak-tool | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 99b8b5e1323c922d15597f576ca02d796256d830
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Mar 13 19:46:37 2013 +0900
+
+    Add feature tags support
+
+ data/fonts-tweak-prop.ui | 118
+ ++++++++++++++++++++++++++++++++++++++---------
+ fontstweak/propui.py     |  50 +++++++++++++++++++-
+ 2 files changed, 146 insertions(+), 22 deletions(-)
+
+commit e838d84438ab2419c5bec421c9f7f124b5737291
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 26 12:12:03 2013 +0900
+
+    Bump the version to 0.2.0
+
+ NEWS         | 8 ++++++++
+ configure.ac | 2 +-
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+
+commit 1bb0db120a02971f443d03b184f6cfed92c665ae
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 26 12:11:09 2013 +0900
+
+    Fix an error on make distcheck
+
+ fontstweak/Makefile.am | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 89b117e48814c97abe7d08bc95984f25da81c3f6
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 26 11:21:05 2013 +0900
+
+    clean up files at an appropriate time
+
+ Makefile.am | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit e982bf7c70c322a4bf9cb97c99d2c22bf86b4718
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 26 11:17:21 2013 +0900
+
+    Minor
+
+ fonts-tweak-tool         | 2 +-
+ fontstweak/aliasui.py    | 2 +-
+ fontstweak/chooserui.py  | 2 +-
+ fontstweak/fontstweak.py | 2 +-
+ fontstweak/langui.py     | 2 +-
+ fontstweak/propui.py     | 2 +-
+ fontstweak/util.py       | 2 +-
+ 7 files changed, 7 insertions(+), 7 deletions(-)
+
+commit e4b5697bc113f7091ee4af987de50df646807025
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 26 11:11:56 2013 +0900
+
+    Fix crash issues when libeasyfc's dependency isn't sufficient
+
+ fonts-tweak-tool | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit e2c512a790efd4b01fcc628898a60334250b20e2
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Feb 25 20:28:08 2013 +0900
+
+    Fix broken mapping on zanata.xml
+
+ zanata.xml | 158
+ ++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 78 insertions(+), 80 deletions(-)
+
+commit 1ed49f45db6a557776a37b70c6d2120a459645bd
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Feb 25 20:27:41 2013 +0900
+
+    Update po
+
+ po/af.po                |  52 ++++++++++++---
+ po/am.po                |  52 ++++++++++++---
+ po/ar.po                |  52 ++++++++++++---
+ po/as.po                |  52 ++++++++++++---
+ po/ast.po               |  52 ++++++++++++---
+ po/az.po                |  52 ++++++++++++---
+ po/bg.po                |  52 ++++++++++++---
+ po/bn.po                |  52 ++++++++++++---
+ po/bn_IN.po             |  52 ++++++++++++---
+ po/brx.po               |  54 +++++++++++++---
+ po/bs.po                |  52 ++++++++++++---
+ po/ca.po                |  52 ++++++++++++---
+ po/cs.po                |  52 ++++++++++++---
+ po/cy.po                |  52 ++++++++++++---
+ po/da.po                |  52 ++++++++++++---
+ po/de.po                |  56 ++++++++++++++---
+ po/de_CH.po             |  52 ++++++++++++---
+ po/el.po                |  52 ++++++++++++---
+ po/en_GB.po             |  52 ++++++++++++---
+ po/eo.po                |  52 ++++++++++++---
+ po/es.po                |  56 ++++++++++++++---
+ po/es_MX.po             |  52 ++++++++++++---
+ po/et.po                |  52 ++++++++++++---
+ po/eu_ES.po             |  52 ++++++++++++---
+ po/fa.po                |  52 ++++++++++++---
+ po/fi.po                |  52 ++++++++++++---
+ po/fonts-tweak-tool.pot |  35 ++++++++++-
+ po/fr.po                |  52 ++++++++++++---
+ po/ga.po                |  52 ++++++++++++---
+ po/gl.po                |  52 ++++++++++++---
+ po/gu.po                |  52 ++++++++++++---
+ po/he.po                |  52 ++++++++++++---
+ po/hi.po                |  52 ++++++++++++---
+ po/hr.po                |  52 ++++++++++++---
+ po/hu.po                |  52 ++++++++++++---
+ po/id.po                |  52 ++++++++++++---
+ po/is.po                |  52 ++++++++++++---
+ po/it.po                |  52 ++++++++++++---
+ po/ja.po                |  52 ++++++++++++---
+ po/ka.po                |  52 ++++++++++++---
+ po/kn.po                |  52 ++++++++++++---
+ po/ko.po                |  52 ++++++++++++---
+ po/ky.po                |  52 ++++++++++++---
+ po/la.po                |  52 ++++++++++++---
+ po/lt.po                |  52 ++++++++++++---
+ po/lv.po                |  52 ++++++++++++---
+ po/mai.po               |  52 ++++++++++++---
+ po/ml.po                |  52 ++++++++++++---
+ po/mn.po                |  52 ++++++++++++---
+ po/mr.po                |  52 ++++++++++++---
+ po/ms.po                |  52 ++++++++++++---
+ po/nb.po                |  52 ++++++++++++---
+ po/nds.po               |  52 ++++++++++++---
+ po/nl.po                | 141 +++++++++++++++++++++++++----------------
+ po/nn.po                |  52 ++++++++++++---
+ po/or.po                |  52 ++++++++++++---
+ po/pa.po                | 145 +++++++++++++++++++++++++-----------------
+ po/pl.po                | 163
+ +++++++++++++++++++++++++-----------------------
+ po/pt.po                |  51 ++++++++++++---
+ po/pt_BR.po             | 132 ++++++++++++++++++---------------------
+ po/ro.po                |  52 ++++++++++++---
+ po/ru.po                |  52 ++++++++++++---
+ po/si.po                |  52 ++++++++++++---
+ po/sk.po                |  52 ++++++++++++---
+ po/sl.po                |  52 ++++++++++++---
+ po/sq.po                |  52 ++++++++++++---
+ po/sr.po                |  52 ++++++++++++---
+ po/sr@latin.po          |  52 ++++++++++++---
+ po/sv.po                |  52 ++++++++++++---
+ po/ta.po                |  56 ++++++++++++++---
+ po/te.po                |  52 ++++++++++++---
+ po/th.po                |  52 ++++++++++++---
+ po/tl.po                |  52 ++++++++++++---
+ po/tr.po                |  74 ++++++++++++++--------
+ po/uk.po                |  52 ++++++++++++---
+ po/vi.po                |  52 ++++++++++++---
+ po/xh.po                |  52 ++++++++++++---
+ po/zh_CN.po             | 136 ++++++++++++++++++++++------------------
+ po/zh_TW.po             | 143 +++++++++++++++++++++---------------------
+ 79 files changed, 3753 insertions(+), 921 deletions(-)
+
+commit 593cfcc248fe2082b4f607d5affa9a229366c924
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Feb 25 20:27:24 2013 +0900
+
+    Drop the unnecessary translations
+
+ data/fonts-tweak-subst.ui | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit f5882b9f01b1479a03d43f4b7bf04a86a286ac73
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Feb 25 20:05:14 2013 +0900
+
+    Do not make substitute font names translatable
+
+ data/fonts-tweak-subst.ui | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 37fdb517903c4774190f0b45348bb24b42285cd7
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Feb 25 19:59:15 2013 +0900
+
+    Add debugging support
+
+ fonts-tweak-tool.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 151c544110352a82783875bf9ff6597e8e2218fb
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Feb 25 19:58:56 2013 +0900
+
+    Add font substitution support
+
+ data/Makefile.am          |   1 +
+ data/chooser.ui           |   5 +-
+ data/fonts-tweak-prop.ui  |  12 +-
+ data/fonts-tweak-subst.ui | 420
+ ++++++++++++++++++++++++++++++++++++++++++++++
+ fonts-tweak-tool          |  16 +-
+ fontstweak/chooserui.py   |   3 +
+ fontstweak/gresource.xml  |   1 +
+ fontstweak/substui.py     | 310 ++++++++++++++++++++++++++++++++++
+ po/POTFILES.in            |   2 +
+ po/fonts-tweak-tool.pot   |  18 +-
+ 10 files changed, 771 insertions(+), 17 deletions(-)
+
+commit a64cd717a12bef10c687b33ea45c54d21d8c381f
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 15 20:05:03 2013 +0900
+
+    Add a script to test locally
+
+ fonts-tweak-tool.sh | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit b1cf76d326c272f506dec830214f228210761f90
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 15 19:38:52 2013 +0900
+
+    Revert the part of the changes in the language ordering UI
+
+ data/fonts-tweak-lang.ui | 140
+ +++++++++--------------------------------------
+ fontstweak/langui.py     |  20 +++----
+ 2 files changed, 33 insertions(+), 127 deletions(-)
+
+commit 1aa7f8606ed55308e2338a3fcf35d39c6279b22c
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 15 19:08:11 2013 +0900
+
+    get back the caption of the button
+
+ data/fonts-tweak-lang.ui | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit b5fddc3b58178f0040cb8ae2612f6fb8b7fa3340
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 15 17:03:21 2013 +0900
+
+    No need to install UI files anymore
+
+ data/Makefile.am | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit c19f16e37ec847bc948f776f09691eeabe95c247
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 15 17:02:54 2013 +0900
+
+    Moving back to autotools again
+
+    To avoid complicated build system so that
+    we need to use it to build libraries.
+
+ Makefile.am            | 18 ------------------
+ configure.ac           |  7 ++++++-
+ fontstweak/Makefile.am |  5 ++++-
+ setup.py.in            | 26 --------------------------
+ 4 files changed, 10 insertions(+), 46 deletions(-)
+
+commit 4ed3b3aea4dddf5aa8f0e09cdcd8d75793cccb90
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 15 17:01:24 2013 +0900
+
+    Use same words
+
+ fontstweak/langui.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 7f2a95d8ac580d487182e05e975a8ea18cb5ab09
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 14 21:00:27 2013 +0900
+
+    Improve UI
+
+    * Set a window title
+    * Similar looks at the inline-toolbar
+    * Adjust the width of the tree view
+    * Adjust the padding around the section headings
+    * better words in label
+    * fix alignment issues among widgets
+
+ configure.ac              |   8 +-
+ data/fonts-tweak-alias.ui | 308
+ ++++++++++++++++++++++++++++------------------
+ data/fonts-tweak-lang.ui  | 159 +++++++++++++++++-------
+ data/fonts-tweak-prop.ui  |  57 ++++++---
+ fonts-tweak-tool          |  22 +++-
+ fontstweak/Makefile.am    |  64 ++++++++++
+ fontstweak/aliasui.py     |   4 +
+ fontstweak/fontstweak.py  |   2 +-
+ fontstweak/gresource.xml  |   9 ++
+ fontstweak/langui.py      |  28 +++--
+ fontstweak/propui.py      |   4 +
+ fontstweak/util.py        |   8 +-
+ 12 files changed, 471 insertions(+), 202 deletions(-)
+
+commit 1b51c3339083069180f14c9864acce7f3ed53226
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 8 19:24:33 2013 +0900
+
+    Minor
+
+ README | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit 7c06b8cb76983b9a97689576ce091af4ebd20e5d
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 8 17:30:23 2013 +0900
+
+    Enable the language ordering feature only when the configuration
+    place is supportable
+
+    It now depends on $HOME/.i18n and this is a distro-specific.
+    without validating this, it may not works as expected.
+    So if it seems not being supported on the runtime env,
+    just hide the tab for this feature.
+    In other words, one can just patch it out to re-enable
+    this feature for your env.
+
+ fonts-tweak-tool     | 11 ++++++++---
+ fontstweak/langui.py | 52
+ ++++++++++++++++++++++++++++++----------------------
+ 2 files changed, 38 insertions(+), 25 deletions(-)
+
+commit 887513378a25558d0c41f506edd0a3f559625866
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 5 15:32:32 2013 +0900
+
+    Enable the embedded bitmap option when the version of libeasyfc is
+    more than 0.10
+
+ data/fonts-tweak-prop.ui | 2 +-
+ fontstweak/propui.py     | 9 +++++++++
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+commit 2801e7cab269cbd2b97f0feb1a1655557c42b669
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 5 15:22:47 2013 +0900
+
+    Use AM_MISSING_PROG instead of hardcoding missing
+
+ Makefile.am  | 14 +++++++-------
+ configure.ac |  2 ++
+ 2 files changed, 9 insertions(+), 7 deletions(-)
+
+commit 23b0cb056d0e7b8e2fa4311a0bc6d29cc5bddea8
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Jan 22 19:48:23 2013 +0900
+
+    Bump the version to 0.1.5
+
+ NEWS         | 11 +++++++++++
+ configure.ac |  2 +-
+ 2 files changed, 12 insertions(+), 1 deletion(-)
+
+commit dbfa18fcf1689e6c57ffd6c8f0ead63a1d2cd457
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Jan 22 19:40:58 2013 +0900
+
+    Update po
+
+ po/af.po                |  8 ++--
+ po/am.po                |  8 ++--
+ po/ar.po                |  8 ++--
+ po/as.po                |  8 ++--
+ po/ast.po               |  8 ++--
+ po/az.po                |  8 ++--
+ po/bg.po                |  8 ++--
+ po/bn.po                |  6 +--
+ po/bn_IN.po             |  8 ++--
+ po/brx.po               |  8 ++--
+ po/bs.po                |  8 ++--
+ po/ca.po                |  8 ++--
+ po/cs.po                |  8 ++--
+ po/cy.po                |  8 ++--
+ po/da.po                |  8 ++--
+ po/de.po                | 10 ++---
+ po/de_CH.po             |  8 ++--
+ po/el.po                |  8 ++--
+ po/en_GB.po             |  8 ++--
+ po/eo.po                |  8 ++--
+ po/es.po                | 10 ++---
+ po/es_MX.po             |  8 ++--
+ po/et.po                |  8 ++--
+ po/eu_ES.po             |  8 ++--
+ po/fa.po                |  8 ++--
+ po/fi.po                |  8 ++--
+ po/fonts-tweak-tool.pot |  6 +--
+ po/fr.po                |  8 ++--
+ po/ga.po                |  8 ++--
+ po/gl.po                |  8 ++--
+ po/gu.po                |  8 ++--
+ po/he.po                |  8 ++--
+ po/hi.po                |  8 ++--
+ po/hr.po                |  8 ++--
+ po/hu.po                |  8 ++--
+ po/id.po                |  8 ++--
+ po/is.po                |  8 ++--
+ po/it.po                |  8 ++--
+ po/ja.po                |  8 ++--
+ po/ka.po                |  8 ++--
+ po/kn.po                |  8 ++--
+ po/ko.po                |  8 ++--
+ po/ky.po                |  8 ++--
+ po/la.po                |  8 ++--
+ po/lt.po                |  8 ++--
+ po/lv.po                |  8 ++--
+ po/mai.po               |  8 ++--
+ po/ml.po                |  8 ++--
+ po/mn.po                |  8 ++--
+ po/mr.po                |  8 ++--
+ po/ms.po                |  8 ++--
+ po/nb.po                |  8 ++--
+ po/nds.po               |  8 ++--
+ po/nl.po                | 97
+ ++++++++++++++++++++++++++----------------------
+ po/nn.po                |  8 ++--
+ po/or.po                |  8 ++--
+ po/pa.po                | 99
+ +++++++++++++++++++++++++------------------------
+ po/pl.po                |  8 ++--
+ po/pt.po                |  6 +--
+ po/pt_BR.po             |  8 ++--
+ po/ro.po                |  8 ++--
+ po/ru.po                |  8 ++--
+ po/si.po                |  8 ++--
+ po/sk.po                |  8 ++--
+ po/sl.po                |  8 ++--
+ po/sq.po                |  8 ++--
+ po/sr.po                |  6 +--
+ po/sr@latin.po          |  6 +--
+ po/sv.po                |  8 ++--
+ po/ta.po                | 10 ++---
+ po/te.po                |  8 ++--
+ po/th.po                |  8 ++--
+ po/tl.po                |  8 ++--
+ po/tr.po                |  8 ++--
+ po/uk.po                |  8 ++--
+ po/vi.po                |  8 ++--
+ po/xh.po                |  8 ++--
+ po/zh_CN.po             | 79 +++++++++++++++++++++------------------
+ po/zh_TW.po             |  8 ++--
+ 79 files changed, 448 insertions(+), 431 deletions(-)
+
+commit b38e73eeb522bef24f798a312f08d3c4e87caf47
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Dec 28 18:35:34 2012 +0900
+
+    Use Pango.Language.get_sample_string() instead of own pangram
+
+ fontstweak/aliasui.py |  4 ++--
+ fontstweak/util.py    | 15 ---------------
+ 2 files changed, 2 insertions(+), 17 deletions(-)
+
+commit d3fa25471c23e5afe89da5bf02bbdb3c372d338b
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Dec 26 19:25:03 2012 +0900
+
+    Updated Simplified Chinese translation from Tommy He
+
+ po/zh_CN.po | 71
+ ++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 32 insertions(+), 39 deletions(-)
+
+commit 11cddd80b89c4b2463f9ec541f9ca36f2c5bd2cf
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Dec 18 18:04:24 2012 +0900
+
+    Bump the version to 0.1.4
+
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 85a534e92ecfa0c76df7646f88d48c4e2075adf6
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Dec 18 18:04:00 2012 +0900
+
+    Fix version check code
+
+ fonts-tweak-tool | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 479c970c1e8ce466f64648f53f4a456b8f3511f0
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Dec 18 17:49:40 2012 +0900
+
+    Bump the version to 0.1.3
+
+ NEWS         | 7 +++++++
+ configure.ac | 2 +-
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+
+commit e04fc5e0b20a46660ecd6a4c161428109dcbbf30
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Dec 12 14:12:59 2012 +0900
+
+    Do not validate the font if the classification filter is turned off
+
+ fontstweak/aliasui.py | 16 ++++++++++------
+ 1 file changed, 10 insertions(+), 6 deletions(-)
+
+commit 4808d109750d710145b7094df5e40cab6be4890a
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Dec 4 15:09:40 2012 +0900
+
+    Allow setting up hintstyle for own hinting in the font
+
+ data/fonts-tweak-prop.ui | 119
+ ++++++++++++++++++++++++++---------------------
+ fontstweak/propui.py     |   2 +-
+ 2 files changed, 67 insertions(+), 54 deletions(-)
+
+commit 3aa248b169427bd9b7758c2070ef92efe2ae2182
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Sat Nov 24 13:37:24 2012 +0900
+
+    Bump the version to 0.1.2
+
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 93bd738ce43df96e8949b93b28fab2e3c68e3fb7
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Sat Nov 24 13:37:12 2012 +0900
+
+    Update po
+
+ po/af.po                |   2 +-
+ po/am.po                |   2 +-
+ po/ar.po                |   2 +-
+ po/as.po                |   2 +-
+ po/ast.po               |   2 +-
+ po/az.po                |   2 +-
+ po/bg.po                |   2 +-
+ po/bn.po                |   2 +-
+ po/bn_IN.po             |   2 +-
+ po/brx.po               |   2 +-
+ po/bs.po                |   2 +-
+ po/ca.po                |   2 +-
+ po/cs.po                |   2 +-
+ po/cy.po                |   2 +-
+ po/da.po                |   2 +-
+ po/de.po                |   2 +-
+ po/de_CH.po             |   2 +-
+ po/el.po                |   2 +-
+ po/en_GB.po             |   2 +-
+ po/eo.po                |   2 +-
+ po/es.po                |   2 +-
+ po/es_MX.po             |   2 +-
+ po/et.po                |   2 +-
+ po/eu_ES.po             |   2 +-
+ po/fa.po                |   2 +-
+ po/fi.po                |   2 +-
+ po/fonts-tweak-tool.pot |   2 +-
+ po/fr.po                |   2 +-
+ po/ga.po                |   2 +-
+ po/gl.po                |   2 +-
+ po/gu.po                |   2 +-
+ po/he.po                |   2 +-
+ po/hi.po                |   2 +-
+ po/hr.po                |   2 +-
+ po/hu.po                |   2 +-
+ po/id.po                |   2 +-
+ po/is.po                |   2 +-
+ po/it.po                |   2 +-
+ po/ja.po                |   2 +-
+ po/ka.po                |   2 +-
+ po/kn.po                |   2 +-
+ po/ko.po                |   2 +-
+ po/ky.po                |   2 +-
+ po/la.po                |   2 +-
+ po/lt.po                |   2 +-
+ po/lv.po                |   2 +-
+ po/mai.po               |   2 +-
+ po/ml.po                |   2 +-
+ po/mn.po                |   2 +-
+ po/mr.po                |   2 +-
+ po/ms.po                |   2 +-
+ po/nb.po                |   2 +-
+ po/nds.po               |   2 +-
+ po/nl.po                |   2 +-
+ po/nn.po                |   2 +-
+ po/or.po                |   2 +-
+ po/pa.po                |   2 +-
+ po/pl.po                |   2 +-
+ po/pt.po                |   2 +-
+ po/pt_BR.po             |   2 +-
+ po/ro.po                |   2 +-
+ po/ru.po                |   2 +-
+ po/si.po                |   2 +-
+ po/sk.po                |   2 +-
+ po/sl.po                |   2 +-
+ po/sq.po                |   2 +-
+ po/sr.po                |   2 +-
+ po/sr@latin.po          |   2 +-
+ po/sv.po                |   2 +-
+ po/ta.po                |   2 +-
+ po/te.po                |   2 +-
+ po/th.po                |   2 +-
+ po/tl.po                |   2 +-
+ po/tr.po                |   2 +-
+ po/uk.po                |   2 +-
+ po/vi.po                |   2 +-
+ po/xh.po                |   2 +-
+ po/zh_CN.po             |   2 +-
+ po/zh_TW.po             |   2 +-
+ zanata.xml              | 155
+ +++++++++++++++++++++++++-----------------------
+ 80 files changed, 159 insertions(+), 154 deletions(-)
+
+commit 70e35ab8cf0682c09d49761be8982d40f3aa7546
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Sat Nov 24 13:31:51 2012 +0900
+
+    Fix broken icons on non-GNOME desktops
+
+ fontstweak/aliasui.py   |  7 +++++++
+ fontstweak/chooserui.py |  5 +++++
+ fontstweak/langui.py    | 10 ++++++++++
+ fontstweak/propui.py    |  6 ++++++
+ fontstweak/util.py      |  8 ++++++++
+ 5 files changed, 36 insertions(+)
+
+commit 10f2116223ee902d978aa421cc4b3055542352ee
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Oct 22 11:34:07 2012 +0900
+
+    another fix to drop the unnecessary warnings
+
+ fontstweak/aliasui.py | 2 --
+ fontstweak/propui.py  | 2 --
+ 2 files changed, 4 deletions(-)
+
+commit d45da31d9eb46adfee827a9e23a360493e246d55
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Oct 22 11:28:24 2012 +0900
+
+    Bump the version to 0.1.1
+
+ configure.ac            | 2 +-
+ po/af.po                | 2 +-
+ po/am.po                | 2 +-
+ po/ar.po                | 2 +-
+ po/as.po                | 2 +-
+ po/ast.po               | 2 +-
+ po/az.po                | 2 +-
+ po/bg.po                | 2 +-
+ po/bn.po                | 2 +-
+ po/bn_IN.po             | 2 +-
+ po/brx.po               | 2 +-
+ po/bs.po                | 2 +-
+ po/ca.po                | 2 +-
+ po/cs.po                | 2 +-
+ po/cy.po                | 2 +-
+ po/da.po                | 2 +-
+ po/de.po                | 2 +-
+ po/de_CH.po             | 2 +-
+ po/el.po                | 2 +-
+ po/en_GB.po             | 2 +-
+ po/eo.po                | 2 +-
+ po/es.po                | 2 +-
+ po/es_MX.po             | 2 +-
+ po/et.po                | 2 +-
+ po/eu_ES.po             | 2 +-
+ po/fa.po                | 2 +-
+ po/fi.po                | 2 +-
+ po/fonts-tweak-tool.pot | 2 +-
+ po/fr.po                | 2 +-
+ po/ga.po                | 2 +-
+ po/gl.po                | 2 +-
+ po/gu.po                | 2 +-
+ po/he.po                | 2 +-
+ po/hi.po                | 2 +-
+ po/hr.po                | 2 +-
+ po/hu.po                | 2 +-
+ po/id.po                | 2 +-
+ po/is.po                | 2 +-
+ po/it.po                | 2 +-
+ po/ja.po                | 2 +-
+ po/ka.po                | 2 +-
+ po/kn.po                | 2 +-
+ po/ko.po                | 2 +-
+ po/ky.po                | 2 +-
+ po/la.po                | 2 +-
+ po/lt.po                | 2 +-
+ po/lv.po                | 2 +-
+ po/mai.po               | 2 +-
+ po/ml.po                | 2 +-
+ po/mn.po                | 2 +-
+ po/mr.po                | 2 +-
+ po/ms.po                | 2 +-
+ po/nb.po                | 2 +-
+ po/nds.po               | 2 +-
+ po/nl.po                | 2 +-
+ po/nn.po                | 2 +-
+ po/or.po                | 2 +-
+ po/pa.po                | 2 +-
+ po/pl.po                | 2 +-
+ po/pt.po                | 2 +-
+ po/pt_BR.po             | 2 +-
+ po/ro.po                | 2 +-
+ po/ru.po                | 2 +-
+ po/si.po                | 2 +-
+ po/sk.po                | 2 +-
+ po/sl.po                | 2 +-
+ po/sq.po                | 2 +-
+ po/sr.po                | 2 +-
+ po/sr@latin.po          | 2 +-
+ po/sv.po                | 2 +-
+ po/ta.po                | 2 +-
+ po/te.po                | 2 +-
+ po/th.po                | 2 +-
+ po/tl.po                | 2 +-
+ po/tr.po                | 2 +-
+ po/uk.po                | 2 +-
+ po/vi.po                | 2 +-
+ po/xh.po                | 2 +-
+ po/zh_CN.po             | 2 +-
+ po/zh_TW.po             | 2 +-
+ 80 files changed, 80 insertions(+), 80 deletions(-)
+
+commit 9160e6d7ae606901cd3c7dc6c2b72d56601eb064
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Sep 24 11:32:03 2012 +0900
+
+    get rid of the unnecessary warnings
+
+ fontstweak/aliasui.py | 2 --
+ fontstweak/propui.py  | 2 --
+ 2 files changed, 4 deletions(-)
+
+commit 6b03d14a8feb69e38aaeac096c42f8b2e6e71e9c
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Sep 19 14:21:59 2012 +0900
+
+    workaround to mask the localized family name checkbox with libeasyfc
+    0.7 or earlier
+
+ fontstweak/aliasui.py | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit 8ecb0e59f06034c3a5e1f6e5d919d7ec72e3e210
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Sep 19 13:13:01 2012 +0900
+
+    This shouldn't make any difference but use False explicitly to be safe
+
+ fontstweak/aliasui.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit cd22dcc191d1bed2dbcae2d49d6e9dc4030ff4ae
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Sep 19 12:44:49 2012 +0900
+
+    Bump the version to 0.1.0
+
+ Makefile.am             |   4 +-
+ configure.ac            |   2 +-
+ po/af.po                |  26 ++++-------
+ po/am.po                |  26 ++++-------
+ po/ar.po                |  26 ++++-------
+ po/as.po                |  26 ++++-------
+ po/ast.po               |  26 ++++-------
+ po/az.po                |  26 ++++-------
+ po/bg.po                |  26 ++++-------
+ po/bn.po                |  26 ++++-------
+ po/bn_IN.po             |  26 ++++-------
+ po/brx.po               |  26 ++++-------
+ po/bs.po                |  26 ++++-------
+ po/ca.po                |  26 ++++-------
+ po/cs.po                |  26 ++++-------
+ po/cy.po                |  26 ++++-------
+ po/da.po                |  26 ++++-------
+ po/de.po                |  26 ++++-------
+ po/de_CH.po             |  26 ++++-------
+ po/el.po                |  26 ++++-------
+ po/en_GB.po             |  26 ++++-------
+ po/eo.po                |  26 ++++-------
+ po/es.po                |  26 ++++-------
+ po/es_MX.po             |  26 ++++-------
+ po/et.po                |  26 ++++-------
+ po/eu_ES.po             |  26 ++++-------
+ po/fa.po                |  26 ++++-------
+ po/fi.po                |  26 ++++-------
+ po/fonts-tweak-tool.pot |  24 ++++------
+ po/fr.po                |  26 ++++-------
+ po/ga.po                |  26 ++++-------
+ po/gl.po                |  26 ++++-------
+ po/gu.po                |  26 ++++-------
+ po/he.po                |  26 ++++-------
+ po/hi.po                |  26 ++++-------
+ po/hr.po                |  26 ++++-------
+ po/hu.po                |  26 ++++-------
+ po/id.po                |  26 ++++-------
+ po/is.po                |  26 ++++-------
+ po/it.po                |  26 ++++-------
+ po/ja.po                |  26 ++++-------
+ po/ka.po                |  26 ++++-------
+ po/kn.po                |  26 ++++-------
+ po/ko.po                |  26 ++++-------
+ po/ky.po                |  26 ++++-------
+ po/la.po                |  26 ++++-------
+ po/lt.po                |  26 ++++-------
+ po/lv.po                |  26 ++++-------
+ po/mai.po               |  26 ++++-------
+ po/ml.po                |  26 ++++-------
+ po/mn.po                |  26 ++++-------
+ po/mr.po                |  26 ++++-------
+ po/ms.po                |  26 ++++-------
+ po/nb.po                |  26 ++++-------
+ po/nds.po               |  26 ++++-------
+ po/nl.po                |  26 ++++-------
+ po/nn.po                |  26 ++++-------
+ po/or.po                |  26 ++++-------
+ po/pa.po                |  26 ++++-------
+ po/pl.po                | 122
+ ++++++++++++++++++++----------------------------
+ po/pt.po                |  26 ++++-------
+ po/pt_BR.po             |  44 +++++++++--------
+ po/ro.po                |  26 ++++-------
+ po/ru.po                |  26 ++++-------
+ po/si.po                |  26 ++++-------
+ po/sk.po                |  26 ++++-------
+ po/sl.po                |  26 ++++-------
+ po/sq.po                |  26 ++++-------
+ po/sr.po                |  26 ++++-------
+ po/sr@latin.po          |  26 ++++-------
+ po/sv.po                |  26 ++++-------
+ po/ta.po                |  26 ++++-------
+ po/te.po                |  26 ++++-------
+ po/th.po                |  26 ++++-------
+ po/tl.po                |  26 ++++-------
+ po/tr.po                |  40 ++++++++--------
+ po/uk.po                |  26 ++++-------
+ po/vi.po                |  26 ++++-------
+ po/xh.po                |  26 ++++-------
+ po/zh_CN.po             |  40 ++++++++--------
+ po/zh_TW.po             |  40 ++++++++--------
+ 81 files changed, 797 insertions(+), 1417 deletions(-)
+
+commit b1cd838f79ca6f9d92993cd1015b468c2af3b171
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Sep 19 12:35:55 2012 +0900
+
+    make unnecessary strings untranslatable
+
+ data/fonts-tweak-alias.ui | 4 ++--
+ data/fonts-tweak-prop.ui  | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit be608e47878c1fe1549736aaf813b92080c07075
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Sep 19 12:09:59 2012 +0900
+
+    Improve the default keyboard operation on chooser UI
+
+ data/chooser.ui         |  1 +
+ fontstweak/chooserui.py | 18 ++++++++++++++++++
+ 2 files changed, 19 insertions(+)
+
+commit ebe8fddf4621bcca1404e8a24243064c22319252
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Aug 30 18:57:43 2012 +0900
+
+    pull the po files from zanata
+
+ po/LINGUAS              |  79 ++++++++++++++++
+ po/af.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/am.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ar.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/as.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ast.po               | 182 ++++++++++++++++++++++++++++++++++++
+ po/az.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/bg.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/bn.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/bn_IN.po             | 182 ++++++++++++++++++++++++++++++++++++
+ po/brx.po               | 182 ++++++++++++++++++++++++++++++++++++
+ po/bs.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/ca.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/cs.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/cy.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/da.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/de.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/de_CH.po             | 182 ++++++++++++++++++++++++++++++++++++
+ po/el.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/en_GB.po             | 182 ++++++++++++++++++++++++++++++++++++
+ po/eo.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/es.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/es_MX.po             | 182 ++++++++++++++++++++++++++++++++++++
+ po/et.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/eu_ES.po             | 182 ++++++++++++++++++++++++++++++++++++
+ po/fa.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/fi.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/fonts-tweak-tool.pot |  30 +++---
+ po/fr.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ga.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/gl.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/gu.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/he.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/hi.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/hr.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/hu.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/id.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/is.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/it.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ja.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ka.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/kn.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ko.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ky.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/la.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/lt.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/lv.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/mai.po               | 182 ++++++++++++++++++++++++++++++++++++
+ po/ml.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/mn.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/mr.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ms.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/nb.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/nds.po               | 182 ++++++++++++++++++++++++++++++++++++
+ po/nl.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/nn.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/or.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/pa.po                | 188 ++++++++++++++++++++++++++++++++++++++
+ po/pl.po                | 238
+ ++++++++++++++++++++++++++++++++++++++++++++++++
+ po/pt.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/pt_BR.po             | 236
+ +++++++++++++++++++++++++++++++++++++++++++++++
+ po/ro.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/ru.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/si.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/sk.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/sl.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/sq.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/sr.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/sr@latin.po          | 183 +++++++++++++++++++++++++++++++++++++
+ po/sv.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/ta.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/te.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/th.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/tl.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/tr.po                | 190 ++++++++++++++++++++++++++++++++++++++
+ po/uk.po                | 183 +++++++++++++++++++++++++++++++++++++
+ po/vi.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/xh.po                | 182 ++++++++++++++++++++++++++++++++++++
+ po/zh_CN.po             | 214 +++++++++++++++++++++++++++++++++++++++++++
+ po/zh_TW.po             | 226
+ +++++++++++++++++++++++++++++++++++++++++++++
+ zanata.xml              |  86 +++++++++++++++++
+ 81 files changed, 14592 insertions(+), 13 deletions(-)
+
+commit 16ddd60c14b54c45e3a0d3711aa84766fff3ed38
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Aug 16 18:38:53 2012 +0900
+
+    Add an option to toggle displaying the localized family name
+
+ data/fonts-tweak-alias.ui | 18 ++++++++++++++++++
+ fontstweak/aliasui.py     | 19 +++++++++++++++----
+ 2 files changed, 33 insertions(+), 4 deletions(-)
+
+commit d7f9084befbbdcd9f458c8c768b2f7bf892baf8a
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Aug 13 17:02:02 2012 +0900
+
+    Always gives a focus to the filter entry widget
+
+ data/chooser.ui         | 1 +
+ fontstweak/chooserui.py | 3 +++
+ 2 files changed, 4 insertions(+)
+
+commit 1523c3e8f5f338b5a0c9aac5b553f5041e4cd075
+Author: jamesni <kent.neo@gmail.com>
+Date:   Mon Aug 6 12:30:27 2012 +0800
+
+    Fix path error of setup.py.in
+
+ MANIFEST.in | 1 -
+ setup.py.in | 2 +-
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+commit d30f6e913240a09c47853575feeec887c62f5999
+Author: jamesni <kent.neo@gmail.com>
+Date:   Mon Aug 6 12:01:49 2012 +0800
+
+    Fix a typo in setup.py.in
+
+ AUTHORS      | 5 +++--
+ configure.ac | 2 +-
+ setup.py.in  | 6 +++---
+ 3 files changed, 7 insertions(+), 6 deletions(-)
+
+commit 530f1d7b474ec13062b32a828269e53c1dd2d623
+Author: jamesni <kent.neo@gmail.com>
+Date:   Mon Aug 6 10:05:29 2012 +0800
+
+    remove fontstools.ui
+
+ data/fontstools.ui | 1018
+ ----------------------------------------------------
+ 1 file changed, 1018 deletions(-)
+
+commit 05ce82358b7d738a85bcb082cca31e73d50b8913
+Author: jamesni <kent.neo@gmail.com>
+Date:   Mon Aug 6 10:04:28 2012 +0800
+
+    remove tool.py
+
+ fontstweak/tool.py | 635
+ -----------------------------------------------------
+ 1 file changed, 635 deletions(-)
+
+commit a4c796805d6e5ab9362cd45940a21d3b0831a335
+Merge: df9aa22 132ba45
+Author: jamesni <jamesni@localhost.localdomain>
+Date:   Mon Aug 6 09:49:28 2012 +0800
+
+    Merge from tagoh's pullrequest
+
+commit df9aa2255baa4337bcda6267a1de2e46a1e334bb
+Author: James Ni <kent.neo@gmail.com>
+Date:   Tue Jul 24 11:53:34 2012 +0800
+
+    Fixed rhbz#838871, Apply button is always clickable
+
+ data/fontstools.ui | 22 ++++++++++++++----
+ fontstweak/tool.py | 66
+ +++++++++++++++++++++++++++++++++++++++---------------
+ 2 files changed, 66 insertions(+), 22 deletions(-)
+
+commit 132ba450cf0a01df423f94d4b8c1f637db0edb46
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 17:05:58 2012 +0900
+
+    Read the fonts properties from config
+
+ fontstweak/propui.py | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+commit 4d15a64e08a2cf156609b46a337ec4b9601e8299
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 17:05:17 2012 +0900
+
+    Fix a typo.
+
+ data/fonts-tweak-prop.ui | 52 +++++++++++++++++------------------
+ po/fonts-tweak-tool.pot  | 70
+ +++++++++++++++++++-----------------------------
+ 2 files changed, 53 insertions(+), 69 deletions(-)
+
+commit ecd36927bdfed14f2e8132ea299d629419cc24c9
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 16:33:46 2012 +0900
+
+    remove tool.py
+
+ fontstweak/tool.py | 605
+ -----------------------------------------------------
+ 1 file changed, 605 deletions(-)
+
+commit 5618e783035753c2338f9f8545d3219064a50460
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 16:28:29 2012 +0900
+
+    Update POT again
+
+ po/fonts-tweak-tool.pot | 36 ++++++++++++++++++++++--------------
+ 1 file changed, 22 insertions(+), 14 deletions(-)
+
+commit 34cd622748367dcfd753fb83b1fb000acbe359a5
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 16:27:54 2012 +0900
+
+    Add an option to stop filtering by classification
+
+ data/fonts-tweak-alias.ui | 884
+ +++++++++++++++++++++++++---------------------
+ fontstweak/aliasui.py     |  19 +-
+ 2 files changed, 504 insertions(+), 399 deletions(-)
+
+commit 21f1743aa5ae2ea15096ef29ba444375c189021b
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 16:27:09 2012 +0900
+
+    workaround to avoid an exception with older libeasyfc
+
+ fonts-tweak-tool | 22 +++++++++++++++++-----
+ 1 file changed, 17 insertions(+), 5 deletions(-)
+
+commit b34a104ced6cb99258c6199e6a92fce0839a9160
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 15:49:16 2012 +0900
+
+    Update autotools files
+
+ Makefile.am             |  4 ++--
+ configure.ac            |  2 +-
+ data/Makefile.am        |  7 +++++--
+ fontstweak/Makefile.am  |  7 ++++++-
+ po/fonts-tweak-tool.pot |  2 +-
+ setup.py                | 25 -------------------------
+ setup.py.in             |  3 ++-
+ 7 files changed, 17 insertions(+), 33 deletions(-)
+
+commit 3d8d9962bc85efc83d68b6ef8d9729da6a1defe3
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jul 23 15:40:21 2012 +0900
+
+    Update POT file
+
+ po/POTFILES.in          |  12 +++-
+ po/fonts-tweak-tool.pot | 158
+ +++++++++++++++++++++++++++++++++++++++---------
+ 2 files changed, 139 insertions(+), 31 deletions(-)
+
+commit 0dcf735fcb08d9869e2208a21d3ecc1b4b49c399
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Jul 19 16:46:09 2012 +0900
+
+    cleanup
+
+ data/fontstools.ui | 1004
+ ----------------------------------------------------
+ 1 file changed, 1004 deletions(-)
+
+commit 8c04fd10c1213540fb0d978eb6a2a5414fe8b6df
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Jul 19 16:43:36 2012 +0900
+
+    revised UI and implementation.
+
+    Add the fonts properties support in new libeasyfc.
+    Add FC_LANG support instead of PANGO_LANGUAGE.
+    Revise UI for GNOME HIG compliant.
+
+ data/chooser.ui           | 158 ++++++++++++
+ data/fonts-tweak-alias.ui | 646
+ ++++++++++++++++++++++++++++++++++++++++++++++
+ data/fonts-tweak-lang.ui  | 167 ++++++++++++
+ data/fonts-tweak-prop.ui  | 480 ++++++++++++++++++++++++++++++++++
+ fonts-tweak-tool          |  94 +++++--
+ fontstweak/aliasui.py     | 255 ++++++++++++++++++
+ fontstweak/chooserui.py   |  47 ++++
+ fontstweak/fontstweak.py  |  24 ++
+ fontstweak/langui.py      | 232 +++++++++++++++++
+ fontstweak/propui.py      | 229 ++++++++++++++++
+ fontstweak/util.py        |  84 ++++++
+ 11 files changed, 2398 insertions(+), 18 deletions(-)
+
+commit 0617e45a83e0da0e7af6e6e7f1beb48432d0cbba
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Jul 23 09:57:26 2012 +0800
+
+    Fixed rhbz#838854, existing settings in .i18n isn't reflected to
+    initial value
+
+ fontstweak/tool.py | 41 +++++++++++++++++++++++++++++++++--------
+ 1 file changed, 33 insertions(+), 8 deletions(-)
+
+commit 2b2a691027563e0a3471bfe4d1143e3ace1c64fd
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Jul 19 10:44:44 2012 +0800
+
+    Fixed rhbz#838865, Unable to remove language in GTK Language Order tab
+
+ fontstweak/tool.py | 22 ++++++++++++++++++----
+ 1 file changed, 18 insertions(+), 4 deletions(-)
+
+commit e8873f8d3cd5a1425abb3856879a3851b9028924
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Jul 19 10:31:36 2012 +0800
+
+    Fixed rhbz#838850, change locale list to language list
+
+ fontstweak/tool.py | 18 ++++++++++--------
+ 1 file changed, 10 insertions(+), 8 deletions(-)
+
+commit 7e52e3a07ef2c9ae7a3b79f1a709e9f1da81a3b6
+Author: James Ni <kent.neo@gmail.com>
+Date:   Fri Jun 29 13:57:58 2012 +0800
+
+    Using setup tool to build package
+
+ MANIFEST.in |  6 ++++++
+ setup.py    | 25 +++++++++++++++++++++++++
+ 2 files changed, 31 insertions(+)
+
+commit 0f9ab70eb2ac99cb7cb42a1509b15d7a6aad9356
+Author: James Ni <kent.neo@gmail.com>
+Date:   Wed Jun 20 14:04:43 2012 +0800
+
+    Change tab name to GTK Language Order
+
+ data/fontstools.ui | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 6b3b3b93be31f968b9846b42847e216602566d98
+Merge: abfdafa 28f69da
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Jun 18 10:06:05 2012 +0800
+
+    Merge branch 'master' of github.com:jamesni/fonts-tweak-tool
+
+commit abfdafa63fadd08f9ac3da77db837910bb132eb4
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Jun 18 10:01:58 2012 +0800
+
+    Add close handler for pango_languae view
+
+ fontstweak/tool.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 8371736a89e641eb75227c3909b6a6ce9d290305
+Author: James Ni <kent.neo@gmail.com>
+Date:   Tue Jun 12 13:26:48 2012 +0800
+
+    Modify the write and update function for PANGO_LANGUAGE
+
+ fontstweak/tool.py | 34 ++++++++++++++++++++++++++--------
+ 1 file changed, 26 insertions(+), 8 deletions(-)
+
+commit f0a4773c31284ad333c05e6a32d1b0bce9ff3a4f
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Jun 11 23:38:39 2012 +0800
+
+    write and update PANGO_LANGUAGE to .18n file
+
+ fontstweak/tool.py | 18 +++++++++++++++---
+ 1 file changed, 15 insertions(+), 3 deletions(-)
+
+commit 1c85d3585bc2388a5d1ca0a69a41f723df592782
+Author: James Ni <kent.neo@gmail.com>
+Date:   Wed Jun 6 14:23:12 2012 +0800
+
+    [pango_language]Change language list to locale list
+
+ fontstweak/tool.py | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit f17b2523f282e0a4c3ec32d36cbf7401574b89cd
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Jun 4 10:13:47 2012 +0800
+
+    save order of language to bashrc
+
+ data/fontstools.ui |  4 ++--
+ fontstweak/tool.py | 27 +++++++++++++++++++++++++++
+ 2 files changed, 29 insertions(+), 2 deletions(-)
+
+commit 28f69daa226dd89376a5286770962e91cf44b9a1
+Merge: 4dae01f d7f1343
+Author: jamesni <kent.neo@gmail.com>
+Date:   Fri May 25 01:02:25 2012 -0700
+
+    Merge pull request #13 from tagoh/master
+
+    Replace the deprecated API in libeasyfc
+
+commit d7f1343a4b8bf45b84b81b404956a1d47e18ee06
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri May 25 15:04:12 2012 +0900
+
+    Replace the deprecated API in libeasyfc to new one
+
+    This requires libeasyfc >= 0.7
+
+ fontstweak/tool.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9eea22f3eacca4fc5d723153544ed940344db83e
+Author: James Ni <kent.neo@gmail.com>
+Date:   Wed May 23 17:26:20 2012 +0800
+
+    Add up/down button processing in pango_language view
+
+ fontstweak/tool.py | 32 +++++++++++++++++++++++++++++---
+ 1 file changed, 29 insertions(+), 3 deletions(-)
+
+commit bce3a4a224f0834979ac0c0f17d5e341e8ffbb8d
+Author: James Ni <kent.neo@gmail.com>
+Date:   Wed May 16 16:49:06 2012 +0800
+
+    Add pango_language tab, language list, language choosing dialog,
+    buttons
+
+ data/fontstools.ui | 1284
+ +++++++++++++++++++++++++++++++---------------------
+ fontstweak/tool.py |   59 ++-
+ 2 files changed, 827 insertions(+), 516 deletions(-)
+
+commit 4dae01f3b0edc5553b50ecc7855ad8031106052f
+Author: James Ni <kent.neo@gmail.com>
+Date:   Wed Apr 11 10:51:42 2012 +0800
+
+    Save the init status (language and fonts) and check changes before
+    closing
+
+ fontstweak/tool.py | 39 ++++++++++++++++++++++++++++++++-------
+ 1 file changed, 32 insertions(+), 7 deletions(-)
+
+commit 69918dd9b236afb4e4d7415dfd9448441eb0489a
+Author: James Ni <kent.neo@gmail.com>
+Date:   Fri Apr 6 18:51:22 2012 +0800
+
+    Fix the issue of vim modelline in header, change tab to space
+
+ fontstweak/tool.py | 144
+ ++++++++++++++++++++++++++---------------------------
+ 1 file changed, 72 insertions(+), 72 deletions(-)
+
+commit ca60f35ddfdc722a4c80fd9e39afe9f1ca80bbef
+Author: James Ni <kent.neo@gmail.com>
+Date:   Tue Mar 20 16:32:31 2012 +0800
+
+    Fix issue of 'UnicodeWarning: Unicode equal comparison failed'
+
+ fontstweak/tool.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit fce209bf161eebd21691fb126a7cfffab714014f
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Mar 19 18:46:36 2012 +0800
+
+    rhbz#797744, add a warning message dialog for discarding added
+    language when closing
+
+ fontstweak/tool.py | 39 +++++++++++++++++++++++++--------------
+ 1 file changed, 25 insertions(+), 14 deletions(-)
+
+commit cb7ec18d0fc9c3bebb9aabfa1b870d1e596ba3a2
+Author: James Ni <kent.neo@gmail.com>
+Date:   Fri Mar 16 18:22:02 2012 +0800
+
+    using GtkTreeModel to get selection
+
+ fontstweak/tool.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f0cb8f72fcf4a43d5edd2b4afeb446e7db39c386
+Author: James Ni <kent.neo@gmail.com>
+Date:   Fri Mar 16 18:18:22 2012 +0800
+
+    #rhbz803215, fix exception when clicking Select without any selection
+
+ fontstweak/tool.py | 32 +++++++++++++++++---------------
+ 1 file changed, 17 insertions(+), 15 deletions(-)
+
+commit bedd6b4297d3bf9c7874c38edda02479b83a6ff0
+Author: James Ni <kent.neo@gmail.com>
+Date:   Fri Mar 16 16:13:26 2012 +0800
+
+    add message dialog to warn user save changes before closing
+
+ fontstweak/tool.py | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit bbdca4020c79aca013c7251e95ca2d58914d07d1
+Merge: 256a9ec 1c14d52
+Author: jamesni <kent.neo@gmail.com>
+Date:   Thu Mar 15 19:05:03 2012 -0700
+
+    Merge pull request #12 from ueno/workaround-pygobject3-in-f17
+
+    Don't expect Gtk.TreeModel values to be decoded.
+
+commit 1c14d526cb6ab7acc6047570e31f63f329e437b5
+Author: Daiki Ueno <ueno@unixuser.org>
+Date:   Fri Mar 16 10:34:35 2012 +0900
+
+    Don't expect Gtk.TreeModel values to be decoded.
+
+    PyGObject versions 3.0.3 and 3.1.0 decode strings in Gtk.TreeModel
+    when retrieval.  This behavior was reverted in 3.1.1:
+    http://git.gnome.org/browse/pygobject/commit/?id=0285e107
+
+    https://bugzilla.redhat.com/show_bug.cgi?id=803222
+
+ fontstweak/tool.py | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+commit 256a9ec99ad39103cf2bab5642dabc731ec1d9b6
+Merge: c15ae8b 2c7e644
+Author: jamesni <kent.neo@gmail.com>
+Date:   Thu Mar 15 00:59:10 2012 -0700
+
+    Merge pull request #11 from tagoh/master
+
+    enhancement and bug fix
+
+commit 2c7e6445c950b3472eac9579952e8f3a568b3fec
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Wed Feb 29 13:13:15 2012 +0900
+
+    Set the translation domain for UI file
+
+ fontstweak/tool.py | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 84c5cf350521aa5673890b5241e7fba83f309ff3
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 28 20:47:01 2012 +0900
+
+    Add the default entry to the lang list being matched to 'any'
+    language.
+
+    This requires libeasyfc >= 0.7
+
+ fontstweak/tool.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit c15ae8b93c6acc237bc2951cbd38fdfcdcf6515d
+Merge: 25af491 b6e387d
+Author: jamesni <kent.neo@gmail.com>
+Date:   Mon Feb 27 19:55:37 2012 -0800
+
+    Merge pull request #10 from tagoh/master
+
+    Fix of rhbz#797744
+
+commit b6e387d878faa2a27bce0e61f5ef8e1b8167f0ac
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Feb 27 17:56:22 2012 +0900
+
+    Ignore an intentional exception (rhbz#797744)
+
+ fontstweak/tool.py | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+commit 25af49176b3d630054e1bb93cfdb39235aeb6235
+Merge: 08f19cf 801fc3a
+Author: jamesni <kent.neo@gmail.com>
+Date:   Wed Feb 22 23:06:10 2012 -0800
+
+    Merge pull request #9 from tagoh/master
+
+    Auto-generate setup.py
+
+commit 801fc3a03429d3421c802df0bcb1af34ee993c1d
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 23 13:07:46 2012 +0900
+
+    Auto-generate setup.py
+
+ Makefile.am  |  3 ++-
+ configure.ac |  1 +
+ setup.py     | 25 -------------------------
+ setup.py.in  | 25 +++++++++++++++++++++++++
+ 4 files changed, 28 insertions(+), 26 deletions(-)
+
+commit 08f19cfc0279ac6082fb7248410fd25cb4fddfcb
+Merge: 38ef2de d213322
+Author: jamesni <kent.neo@gmail.com>
+Date:   Wed Feb 22 01:35:55 2012 -0800
+
+    Merge pull request #7 from ueno/translate-sample-text
+
+    Translate sample text.
+
+commit 38ef2dee7c9859bb0b45722c828100e827dca3a4
+Merge: e6da2df e49e70b
+Author: jamesni <kent.neo@gmail.com>
+Date:   Wed Feb 22 01:33:28 2012 -0800
+
+    Merge pull request #8 from tagoh/master
+
+    Fix a typo
+
+commit e49e70b89b40147b89552f335e8b7cb03a0991d7
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 17 12:28:56 2012 +0900
+
+    Fix a typo
+
+ Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 0e00bbb7bb2eea8b50e2fc86afa8e386c4313db4
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 17 12:19:09 2012 +0900
+
+    Fix a typo
+
+ Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d213322221595e287cbea357bdfef8e1a5ea5464
+Author: Daiki Ueno <ueno@unixuser.org>
+Date:   Fri Feb 17 11:05:28 2012 +0900
+
+    Translate sample text.
+
+ data/fontstools.ui      | 10 ++++-----
+ fontstweak/tool.py      | 29 +++++++++++++++++++-----
+ po/POTFILES.in          |  1 +
+ po/fonts-tweak-tool.pot | 60
+ ++++++++++++++-----------------------------------
+ 4 files changed, 46 insertions(+), 54 deletions(-)
+
+commit e6da2dfec3f0e45e936bde414b3d69eb8c3ff4d4
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Feb 16 17:56:14 2012 +0800
+
+    Revert "replace sample text in fontstools.ui, tool.py and update
+    pot file"
+
+    This reverts commit fcf45f5d2c7a7ca84055873c7e11f6b2d010f68a.
+
+ data/fontstools.ui      | 10 +++++-----
+ fontstweak/tool.py      |  8 ++++----
+ po/fonts-tweak-tool.pot | 22 +++++++++++-----------
+ 3 files changed, 20 insertions(+), 20 deletions(-)
+
+commit fcf45f5d2c7a7ca84055873c7e11f6b2d010f68a
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 16 17:24:57 2012 +0900
+
+    replace sample text in fontstools.ui, tool.py and update pot file
+
+ data/fontstools.ui      | 10 +++++-----
+ fontstweak/tool.py      |  8 ++++----
+ po/fonts-tweak-tool.pot | 22 +++++++++++-----------
+ 3 files changed, 20 insertions(+), 20 deletions(-)
+
+commit 648461f93d78f5d22e8f69dbcec3cacd7c9ef3ca
+Merge: 7c2e49d 0038ed6
+Author: jamesni <kent.neo@gmail.com>
+Date:   Thu Feb 16 00:27:03 2012 -0800
+
+    Merge pull request #6 from tagoh/master
+
+    add gettext support and autotoolize
+
+commit 0038ed678bbdf885be226ce76dab348908dd0751
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 16 17:24:57 2012 +0900
+
+    Add gettext support
+
+ fontstweak/tool.py | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit b6fbe2636067245145f4ad23f09386feebba95e1
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 16 17:14:04 2012 +0900
+
+    Update the data path
+
+ fontstweak/tool.py | 15 +++++++++++----
+ 1 file changed, 11 insertions(+), 4 deletions(-)
+
+commit 3c3a7b771fbe29dbe28ba31949819d43ca943f0e
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 16 17:07:26 2012 +0900
+
+    Add a missing file
+
+ Makefile.am | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 4dd20bbb2a3438c25c1b301cf7bb43db4ff0d072
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 16 17:07:16 2012 +0900
+
+    Fix a typo
+
+ fontstweak/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d527dd5c378d68847ff358dde6a78f66928d4b26
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 16 16:36:53 2012 +0900
+
+    autotoolize
+
+ .gitignore               |   3 -
+ AUTHOR                   |   4 -
+ AUTHORS                  |   4 +
+ MANIFEST.in              |   5 -
+ Makefile.am              |  82 ++++++
+ NEWS                     |   0
+ autogen.sh               |  21 ++
+ configure.ac             |  33 +++
+ data/Makefile.am         |  19 ++
+ data/fontstools.ui       | 750
+ +++++++++++++++++++++++++++++++++++++++++++++++
+ data/locale-list         | 145 +++++++++
+ fontstweak/Makefile.am   |  16 +
+ fontstweak/fontstools.ui | 750
+ -----------------------------------------------
+ fontstweak/locale-list   | 145 ---------
+ po/LINGUAS               |   0
+ po/POTFILES.in           |   2 +-
+ po/fonts-tweak-tool.pot  |  62 +++-
+ setup.py                 |   1 -
+ 18 files changed, 1119 insertions(+), 923 deletions(-)
+
+commit 84c27eeaf2c68480a621e42a7a0e7a7953e75265
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Feb 16 15:25:48 2012 +0900
+
+    Add git.mk from http://github.com/behdad/git.mk
+
+ git.mk | 206
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 206 insertions(+)
+
+commit 7c2e49d4aca0dd1427123d5c1ea1cfa4a32fe09e
+Merge: 9a75c1f 527ed0d
+Author: jamesni <kent.neo@gmail.com>
+Date:   Tue Feb 14 01:39:43 2012 -0800
+
+    Merge pull request #5 from tagoh/master
+
+    Add pot file
+
+commit 9a75c1f6d86de764a65c70b038aaa2937a55a6de
+Merge: 3887b26 1168efb
+Author: jamesni <kent.neo@gmail.com>
+Date:   Tue Feb 14 01:38:09 2012 -0800
+
+    Merge pull request #4 from ueno/font-preview
+
+    Preview fonts in combobox popup.
+
+commit 527ed0dceb72ac54ba4f82eb8c0c713c5364252b
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Feb 14 18:28:13 2012 +0900
+
+    add pot file
+
+ .gitignore                  |  1 +
+ fonts-tweak-tool.desktop    | 10 ------
+ fonts-tweak-tool.desktop.in | 10 ++++++
+ po/POTFILES.in              |  2 ++
+ po/fonts-tweak-tool.pot     | 78
+ +++++++++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 91 insertions(+), 10 deletions(-)
+
+commit 1168efb4b21657339a3af2eb562696dea3fc2e9e
+Author: Daiki Ueno <ueno@unixuser.org>
+Date:   Fri Feb 10 18:17:53 2012 +0900
+
+    Allow user to preview fonts before applying changes.
+
+ fontstweak/fontstools.ui | 283
+ ++++++++++++++++++++++++++++++++++++++++++-----
+ fontstweak/tool.py       |  24 ++++
+ 2 files changed, 278 insertions(+), 29 deletions(-)
+
+commit 3887b2646966ddc05427369b6e33e994f90761c1
+Merge: de854da c0faa56
+Author: jamesni <kent.neo@gmail.com>
+Date:   Fri Feb 10 00:54:47 2012 -0800
+
+    Merge pull request #3 from tagoh/master
+
+    bug fix
+
+commit c0faa56e6a478865c46bb86045be85c0971b9ab3
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Fri Feb 10 16:57:25 2012 +0900
+
+    Fix typo that caused always adding a language.
+
+ fontstweak/tool.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit de854da4daca05458e8879e3e1865dcc32030c30
+Author: James Ni <kent.neo@gmail.com>
+Date:   Tue Feb 7 15:14:00 2012 +0800
+
+    Add desktop file
+
+ MANIFEST.in              |  1 +
+ fonts-tweak-tool.desktop | 10 ++++++++++
+ 2 files changed, 11 insertions(+)
+
+commit 6e0d1decb6675d5eba2f801e8c02d0f1b7877420
+Author: James Ni <kent.neo@gmail.com>
+Date:   Tue Feb 7 11:25:51 2012 +0800
+
+    Modify the path of locale-list
+
+ MANIFEST.in            |   4 +-
+ fontstweak/locale-list | 145
+ +++++++++++++++++++++++++++++++++++++++++++++++++
+ fontstweak/tool.py     |  12 ++--
+ locale-list            | 145
+ -------------------------------------------------
+ 4 files changed, 155 insertions(+), 151 deletions(-)
+
+commit 57688e1931244ec9155c731ef24637f42baaa2d9
+Author: James Ni <kent.neo@gmail.com>
+Date:   Tue Feb 7 11:15:29 2012 +0800
+
+    Modify the path of fontstools.ui and update version to 0.0.2
+
+ fontstools.ui            | 525
+ -----------------------------------------------
+ fontstweak/fontstools.ui | 525
+ +++++++++++++++++++++++++++++++++++++++++++++++
+ fontstweak/tool.py       |   5 +-
+ setup.py                 |  26 +++
+ 4 files changed, 555 insertions(+), 526 deletions(-)
+
+commit 9ccbb066e6ccb83f135b95f7759c29040196d6fa
+Author: James Ni <kent.neo@gmail.com>
+Date:   Tue Feb 7 10:16:40 2012 +0800
+
+    Update the licenses to LGPLV3+
+
+ COPYING            | 827
+ ++++++++++-------------------------------------------
+ MANIFEST.in        |   4 +
+ fonts-tweak-tool   |  29 +-
+ fontstweak/tool.py |  28 +-
+ 4 files changed, 190 insertions(+), 698 deletions(-)
+
+commit a403152cf20548a58d3b18a4d49d028c15244a01
+Author: James Ni <kent.neo@gmail.com>
+Date:   Wed Feb 1 14:43:04 2012 +0800
+
+    rename bin file to fonts-tweak-tool
+
+ fonts-tweak-tool  |  27 +++
+ fontstweaktool    |  27 ---
+ fonttools-2.glade | 535
+ ------------------------------------------------------
+ 3 files changed, 27 insertions(+), 562 deletions(-)
+
+commit 5e7a9cb19c1a4dfe74d4867e65696991124130fd
+Merge: 7e486cf b282dad
+Author: jamesni <kent.neo@gmail.com>
+Date:   Sun Jan 29 23:51:55 2012 -0800
+
+    Merge pull request #2 from tagoh/master
+
+    implement possibly the rest of the works
+
+commit b282dad1205ea24cea19c2323c94d12665d0847f
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Tue Jan 24 13:26:03 2012 +0900
+
+    integrate with libeasyfc
+
+ fontstweak/tool.py | 113
+ +++++++++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 93 insertions(+), 20 deletions(-)
+
+commit 1c0e5208e3ae2c301f515e89e3bb3013f33f531d
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jan 23 18:07:30 2012 +0900
+
+    refactoring to allow looking up the language and the locale name
+    anytime quickly
+
+ fontstweak/tool.py | 83
+ +++++++++++++++++++++++++++---------------------------
+ 1 file changed, 42 insertions(+), 41 deletions(-)
+
+commit 08b58f0f2cda8b4f6f096ffab71eac2db597c4e3
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jan 23 17:23:13 2012 +0900
+
+    implement 'remove-lang' button.
+
+ fontstweak/tool.py | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+commit 2ab229cbe599bb49a1e1132f7676433cda736045
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jan 23 17:11:40 2012 +0900
+
+    do not commit *.pyc
+
+ .gitignore | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit ac0819036dcbc9e451d8c55e8b18ad78f0871dce
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jan 23 17:10:24 2012 +0900
+
+    Use GtkBuilder UI file for LangDialog.
+
+ fontstools.ui      | 106
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ fontstweak/tool.py |  47 ++++++++++--------------
+ 2 files changed, 123 insertions(+), 30 deletions(-)
+
+commit 77b166e3942eb69a3f9899c63b50549c72970a83
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jan 23 16:34:27 2012 +0900
+
+    * separate relationship between LangDialog and FontsTweakTool class.
+    * toggle 'remove-lang' button according to the status of the lang
+    selection.
+    * apply current selection to the fonts list.
+    * Do not add the same language to the list.
+
+ fontstweak/tool.py | 83
+ ++++++++++++++++++++++++++++++++++++------------------
+ 1 file changed, 56 insertions(+), 27 deletions(-)
+
+commit 7f03877f4966837a803a6aea3a02e96e5bd27bae
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Mon Jan 23 15:39:06 2012 +0900
+
+    refactoring to use things in UI files as much as possible.
+
+ fontstools.ui      | 44 +++++++++++++++++++++++++++++-----
+ fontstweak/tool.py | 70
+ +++++++++++++++++++++++++++++-------------------------
+ 2 files changed, 75 insertions(+), 39 deletions(-)
+
+commit 7e486cf0933b14bef9ae18de78369e9d74faa274
+Author: James Ni <kent.neo@gmail.com>
+Date:   Sat Jan 21 14:29:10 2012 +0800
+
+    Make combobox only display fonts for chosen language
+
+ fontstweak/tool.py | 66
+ ++++++++++++++++++++++++++++++++++++++++--------------
+ 1 file changed, 49 insertions(+), 17 deletions(-)
+
+commit a7dc9fcc7b782944b6ebb946f297455ada890084
+Author: James Ni <kent.neo@gmail.com>
+Date:   Fri Jan 20 16:29:25 2012 +0800
+
+    Modify README and add AUTHOR
+
+ AUTHOR | 4 ++++
+ README | 5 +++++
+ 2 files changed, 9 insertions(+)
+
+commit 004991a9fbeaa4b72b4faff63c271129b9e9bff9
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Jan 19 17:09:45 2012 +0800
+
+    Display combobox only when language is selected
+
+ fontstweak/tool.py |  16 +-
+ fonttools-2.ui     | 530
+ -----------------------------------------------------
+ 2 files changed, 11 insertions(+), 535 deletions(-)
+
+commit cdca6dcf0f4f7a16a49f81cc0f76a734647ee821
+Merge: 66d729c db692db
+Author: jamesni <kent.neo@gmail.com>
+Date:   Thu Jan 19 00:16:07 2012 -0800
+
+    Merge pull request #1 from tagoh/master
+
+    proposal to add a notification for the language selection
+
+commit db692db8460f1550318eac5290e9ea9743037315
+Author: Akira TAGOH <akira@tagoh.org>
+Date:   Thu Jan 19 17:10:47 2012 +0900
+
+    Add a GtkNotebook to switch the pages between the configuration view
+    and the information.
+
+ fontstools.ui      | 346
+ ++++++++++++++++++++++++++++++-----------------------
+ fontstweak/tool.py |   2 +-
+ 2 files changed, 196 insertions(+), 152 deletions(-)
+
+commit 66d729c21a7415e5dd3652f8b4096656a8da15ba
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Jan 19 11:39:59 2012 +0800
+
+    Remove pyc files from repo
+
+ fontstweak/__init__.pyc | Bin 139 -> 0 bytes
+ fontstweak/tool.pyc     | Bin 5038 -> 0 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit ef455628570943c06d99fdfbd65b674e883f0e4b
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Jan 19 11:37:48 2012 +0800
+
+    Modify the language choose dialog, and call libeasyfc to list fonts
+
+ fontstweak/tool.py  | 109
+ ++++++++++++++++++++++++++++++----------------------
+ fontstweak/tool.pyc | Bin 4226 -> 5038 bytes
+ 2 files changed, 64 insertions(+), 45 deletions(-)
+
+commit d8258e244e717c0d708b787c8f9c4a8af7f82c74
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Jan 9 16:57:23 2012 +0800
+
+    Add function to read locale list and select button for choosing
+    language
+
+ fontstweak/tool.py  |  67 ++++++++++++++++--------
+ fontstweak/tool.pyc | Bin 3774 -> 4226 bytes
+ locale-list         | 145
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 190 insertions(+), 22 deletions(-)
+
+commit 7cd0f6f3018610b0a0f8da7189df3b5adb3834ec
+Author: James Ni <kent.neo@gmail.com>
+Date:   Mon Jan 9 14:16:10 2012 +0800
+
+    Add Language chooser and button
+
+ fontstweak/tool.py  |  64
+ ++++++++++++++++++++++++++++++++++++++++++++++++----
+ fontstweak/tool.pyc | Bin 1603 -> 3774 bytes
+ 2 files changed, 60 insertions(+), 4 deletions(-)
+
+commit e055b4e8feb1843751095d6a4ef9258120b2b662
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Jan 5 12:35:17 2012 +0800
+
+    Change the ui and implement the handler for close button
+
+ fontstools.ui           | 347
+ ++++++++++++++++++++++++++++++++++++++++++++++++
+ fontstweak/__init__.py  |   0
+ fontstweak/__init__.pyc | Bin 0 -> 139 bytes
+ fontstweak/tool.py      |  51 +++++++
+ fontstweak/tool.pyc     | Bin 0 -> 1603 bytes
+ fontstweaktool          |  27 ++++
+ fonttweak/__init__.py   |   0
+ fonttweak/tool.py       |  46 -------
+ fonttweaktool           |  27 ----
+ 9 files changed, 425 insertions(+), 73 deletions(-)
+
+commit fff199c947252ac02aab5e35d149acbdb766fd10
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Sep 1 15:56:06 2011 +0800
+
+    remove pyc file
+
+ fonttweak/__init__.pyc | Bin 138 -> 0 bytes
+ fonttweak/tool.pyc     | Bin 1238 -> 0 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit f073a148381f2cf57453b0bcc227651872fb6b47
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Sep 1 15:40:17 2011 +0800
+
+    reconstruct source code
+
+ font-tweaktool.py | 20 --------------------
+ main.py           | 20 --------------------
+ 2 files changed, 40 deletions(-)
+
+commit e67e02540519832ea2277c7aac968017372dd17a
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Sep 1 15:38:50 2011 +0800
+
+    reconstruct the source code-a
+
+ COPYING                | 674
+ +++++++++++++++++++++++++++++++++++++++++++++++++
+ fonttweak/__init__.py  |   0
+ fonttweak/__init__.pyc | Bin 0 -> 138 bytes
+ fonttweak/tool.py      |  46 ++++
+ fonttweak/tool.pyc     | Bin 0 -> 1238 bytes
+ fonttweaktool          |  27 ++
+ main.py                |  20 ++
+ 7 files changed, 767 insertions(+)
+
+commit 4beac57b647dc304857576dfd5db5ea93703517b
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Sep 1 13:36:01 2011 +0800
+
+    add script to call fonttools-2.ui
+
+ font-tweaktool.py |  20 ++
+ fonttools-2.glade | 535
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ fonttools-2.ui    | 530
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 1085 insertions(+)
+
+commit 29ea2cd95aeb5a4c5312630849c659270ea6d0d0
+Author: James Ni <kent.neo@gmail.com>
+Date:   Thu Sep 1 13:00:21 2011 +0800
+
+    first commit
+
+ README | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)

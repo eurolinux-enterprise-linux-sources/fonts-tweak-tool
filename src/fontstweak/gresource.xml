@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gresources>
+  <gresource prefix="/org/tagoh/fonts-tweak-tool">
+    <file preprocess="xml-stripblanks">fonts-tweak-alias.ui</file>
+    <file preprocess="xml-stripblanks">fonts-tweak-prop.ui</file>
+    <file preprocess="xml-stripblanks">fonts-tweak-lang.ui</file>
+    <file preprocess="xml-stripblanks">fonts-tweak-subst.ui</file>
+    <file preprocess="xml-stripblanks">chooser.ui</file>
+  </gresource>
+</gresources>

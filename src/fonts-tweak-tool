@@ -1,0 +1,131 @@
+#! /usr/bin/python
+# -*- coding: utf-8 -*-
+# fonts-tweak-tool
+# Copyright (c) 2011-2012 Jian Ni <jni@redhat.com>
+# Copyright (c) 2012-2013 Red Hat, Inc.
+#
+# Authors:
+#   Akira TAGOH  <tagoh@redhat.com>
+#
+# This library is free software: you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation, either
+# version 3 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import gettext
+import gi
+import locale
+import os
+from fontstweak.fontstweak import FontsTweakConst
+from fontstweak.util import FontsTweakUtil
+from fontstweak.aliasui import FontsTweakAliasUI
+from fontstweak.propui import FontsTweakPropUI
+from fontstweak.substui import FontsTweakSubstUI
+from fontstweak.langui import FontsTweakLangUI
+from gi.repository import Easyfc
+from gi.repository import FontsTweak
+from gi.repository import Gio
+from gi.repository import GLib
+from gi.repository import Gtk
+from distutils.version import LooseVersion
+
+_ = gettext.gettext
+
+try:
+    locale.setlocale(locale.LC_ALL, '')
+except Locale.Error as e:
+    os.environ['LC_ALL'] = 'C'
+    locale.setlocale(locale.LC_ALL, '')
+
+gettext.bind_textdomain_codeset(FontsTweakConst.GETTEXT_PACKAGE, locale.nl_langinfo(locale.CODESET))
+gettext.bindtextdomain(FontsTweakConst.GETTEXT_PACKAGE, FontsTweakConst.LOCALEDIR)
+gettext.textdomain(FontsTweakConst.GETTEXT_PACKAGE)
+
+Gio.Resource._register(FontsTweak.get_resource())
+
+Easyfc.init()
+config = Easyfc.Config()
+config.set_name("fontstweak")
+try:
+    # This method is available on libeasyfc >= 0.8
+    config.set_migration(True)
+except AttributeError as e:
+    pass
+
+try:
+    config.load()
+except GLib.GError as e:
+    if e.domain != 'ezfc-error-quark' or e.code != 7:
+        raise
+
+dlgui = Gtk.Dialog('Fonts Tweak Tool', None, Gtk.ResponseType.CLOSE)
+dlgui.set_deletable(False)
+dlgui.connect('delete-event', Gtk.main_quit)
+content_area = dlgui.get_content_area()
+
+aliasui_builder = FontsTweakUtil.create_builder('fonts-tweak-alias.ui')
+aliasui_builder.connect_signals(FontsTweakAliasUI(config, aliasui_builder, dlgui))
+aliasui = aliasui_builder.get_object('fonts-alias-ui')
+
+try:
+    ezfcver = Easyfc.version()
+    if LooseVersion(ezfcver) >= LooseVersion('0.8'):
+        propui_builder = FontsTweakUtil.create_builder('fonts-tweak-prop.ui')
+        propui_builder.connect_signals(FontsTweakPropUI(config, propui_builder, dlgui))
+        propui = propui_builder.get_object('fonts-prop-ui')
+    else:
+        propui = None
+except AttributeError:
+    propui = None
+
+try:
+    ezfcver = Easyfc.version()
+    if LooseVersion(ezfcver) >= LooseVersion('0.11'):
+        substui_builder = FontsTweakUtil.create_builder('fonts-tweak-subst.ui')
+        substui_builder.connect_signals(FontsTweakSubstUI(config, substui_builder, dlgui))
+        substui = substui_builder.get_object('fonts-subst-ui')
+    else:
+        substui = None
+except AttributeError:
+    substui = None
+
+langui_builder = FontsTweakUtil.create_builder('fonts-tweak-lang.ui')
+langui_obj = FontsTweakLangUI(langui_builder, dlgui)
+langui_builder.connect_signals(langui_obj)
+if langui_obj.supported == True:
+    langui = langui_builder.get_object('fonts-lang-order-ui')
+else:
+    langui = None
+
+tabs = Gtk.Notebook()
+tabs.set_margin_left(16)
+tabs.set_margin_right(16)
+tabs.set_margin_top(16)
+tabs.set_margin_bottom(8)
+tabs.append_page(aliasui, Gtk.Label(_('Fonts Aliases')))
+if propui is not None:
+    tabs.append_page(propui, Gtk.Label(_('Fonts Properties')))
+if substui is not None:
+    tabs.append_page(substui, Gtk.Label(_('Font Substitutions')))
+if langui is not None:
+    tabs.append_page(langui, Gtk.Label(_('Language Ordering')))
+content_area.set_border_width(2)
+content_area.add(tabs)
+
+close = Gtk.Button(stock=Gtk.STOCK_CLOSE)
+close.connect('clicked', Gtk.main_quit)
+dlgui.add_action_widget(close, Gtk.ResponseType.CLOSE)
+action_area = dlgui.get_action_area()
+action_area.set_margin_right(12)
+action_area.set_margin_bottom(4)
+dlgui.show_all()
+
+Gtk.main()

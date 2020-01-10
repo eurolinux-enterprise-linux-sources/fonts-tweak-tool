@@ -1,0 +1,41 @@
+= 0.3.1 -> 0.3.2 =
+
+ * Fix shebang
+ * Python3 support
+
+= 0.3.0 -> 0.3.1 =
+
+ * Fix a build issue with the latest gobject-introspection
+ * Fix typos
+
+= 0.2.0 -> 0.3.0 =
+
+ * Add feature tags support
+ * Fix the close button behavior from window manager.
+
+= 0.1.5 -> 0.2.0 =
+
+ * Improve UI
+ * Add embedded bitmap support (libeasyfc 0.11 is required)
+ * Hide the language ordering feature when it's not supported
+ * Add font substitution support (libeasyfc 0.11 is required)
+ * Embed resource files into the binary.
+
+= 0.1.4 -> 0.1.5 =
+
+ * Translation Updates
+ * Enhancement
+   * Use the pangram from Pango API instead of the own one.
+
+= 0.1.3 -> 0.1.4 =
+
+ * Bug Fix
+   * Fix the version check code.
+
+= 0.1.2 -> 0.1.3 =
+
+ * Enhancement
+   * Allow users to set hintstyle for both hinting mode
+ * Bug Fix
+   * Do not validate the font if the classification filter is turned off
+

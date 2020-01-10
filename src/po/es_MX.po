@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-17 18:55+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es-MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Zanata 2.2.2\n"
+
+#: ../data/chooser.ui.h:1
+msgid "Select an item to add"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:1 ../data/fonts-tweak-lang.ui.h:2
+msgid "Add a language"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:2 ../data/fonts-tweak-lang.ui.h:3
+msgid "Remove the language"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:3
+msgid "Do not filter a font family name by classification"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:4
+msgid "List a localized family name if available"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:5 ../data/fonts-tweak-prop.ui.h:5
+msgid "<b>General</b>"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:6
+msgid "Sans Serif:"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:7
+msgid "Serif:"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:8
+msgid "Monospace:"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:9
+msgid "Cursive:"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:10
+msgid "Fantasy:"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:11
+msgid "Sample:"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:12
+msgid "The quick brown fox jumps over the lazy dog. 1234567890"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:13
+msgid "<b>Aliases</b>"
+msgstr ""
+
+#: ../data/fonts-tweak-alias.ui.h:14
+msgid "Please select a language."
+msgstr ""
+
+#: ../data/fonts-tweak-lang.ui.h:1
+msgid "Add languages you prefer to see."
+msgstr ""
+
+#: ../data/fonts-tweak-lang.ui.h:4
+msgid "Move the selected language up"
+msgstr ""
+
+#: ../data/fonts-tweak-lang.ui.h:5
+msgid "Move the selected language down"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:1
+msgid "Add a font"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:2
+msgid "Remove the font"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:3
+msgid "Use sub-pixel rendering"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:4
+msgid "Use embedded bitmap font if any"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:6
+msgid "Do not use any hinting data"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:7
+msgid "Use hinting data in the font"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:8
+msgid "Use automatic-hinting feature"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:9
+msgid "<b>Hinting</b>"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:10
+msgid "<b>Features</b>"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:11 ../data/fonts-tweak-subst.ui.h:8
+msgid "Please select a font."
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:12
+msgid "None"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:13
+msgid "Slight"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:14
+msgid "Medium"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:15
+msgid "Full"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:16
+msgid "Grayscale"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:17
+msgid "RGB"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:18
+msgid "BGR"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:19
+msgid "VRGB"
+msgstr ""
+
+#: ../data/fonts-tweak-prop.ui.h:20
+msgid "VBGR"
+msgstr ""
+
+#: ../data/fonts-tweak-subst.ui.h:1
+msgid "Select a font to add"
+msgstr ""
+
+#: ../data/fonts-tweak-subst.ui.h:2
+msgid "Add a substitute font"
+msgstr ""
+
+#: ../data/fonts-tweak-subst.ui.h:3
+msgid "Remove the substitute font"
+msgstr ""
+
+#: ../data/fonts-tweak-subst.ui.h:4
+msgid "Add a font to the substitute font"
+msgstr ""
+
+#: ../data/fonts-tweak-subst.ui.h:5
+msgid "Remove the font from the substitute font"
+msgstr ""
+
+#: ../data/fonts-tweak-subst.ui.h:6
+msgid "Move the selected font up"
+msgstr ""
+
+#: ../data/fonts-tweak-subst.ui.h:7
+msgid "Move the selected font down"
+msgstr ""
+
+#: ../fonts-tweak-tool.desktop.in.h:1
+msgid "Fonts Tweak Tool"
+msgstr ""
+
+#: ../fonts-tweak-tool.desktop.in.h:2
+msgid "Tweak fonts by language using fontconfig"
+msgstr ""
+
+#: ../fontstweak/aliasui.py:93 ../fontstweak/langui.py:68
+msgid "Choose a language..."
+msgstr ""
+
+#: ../fontstweak/propui.py:94 ../fontstweak/substui.py:57
+#: ../fontstweak/substui.py:74
+msgid "Select a font..."
+msgstr ""
+
+#: ../fontstweak/util.py:55
+msgid "Default"
+msgstr ""
